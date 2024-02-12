@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="parking.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>PARKING LOT</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="container1">
+            <div class="header">
+                <div class="row row1">
+                    <div class="col col-8">
+                        <div class="title ">
+                            <h1 class="title1 text-center">CAR PARKING</h1>
+                        </div>
+                    </div>
+                    <div class="col col-3"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4F_-LkF0XrfVsF4ey9hzcIvbIH5imp5RrNcFIYX0a03647RUEVEGdIyuSqw&s" alt="image" class="img1"></div>
+    
+    
+                </div>
+            </div>
+                <br><br><br>
+            <div class="content">
+             <div class="owner col">
+                <label for="owner" class="col-2">OWNER NAME :</label>
+                <input type="text" id="owner" class="owner form-control" name="owner"  required>
+             </div>
+             <div class="car col mt-3">
+                <label for="car" class="col-2">CAR MODEL :</label>
+                <input type="text" id="car" name="car" class="car form-control " required>
+             </div>
+
+             <div class="car col mt-3">
+                <label for="registration_no" class="col-2">REGISTRATION NO :</label>
+                <input type="number" id="registration_no" name="registration_no" class="registration_no form-control " required>
+             </div>
+    
+             <div class="licencePlate col mt-3">
+                <label for="licencePlate" class="col-2">LICENCE-PLATE :</label>
+                <input type="number" id="licencePlate" name="licencePlate" class="licencePlate form-control " required>
+             </div>
+              
+             <div class="row row2">
+                <div class="col col-5  entryDate  mt-3  ">
+                    <label for="entryDate" >ARRIVAL:</label>
+                    <input type="date" id="entryDate" class="entryDate form-control " name="entryDate" required>
+                 </div>
+    
+                 <div class="col col-5  exitDate mt-3  ">
+                <label for="exitDate" >DEPARTURE:</label>
+                <input type="date" id="exitDate" class="exitDate form-control " name="exitDate" required>
+             </div>
+            
+            </div>
+            <div class="btn1 mt-5">
+                <button id="addCar" class="btn btn-success">ADD CAR</button>
+            </div>
+        </form>
+        <div class="table row mt-5" id="table">
+            <div class="col t1">OWNER</div>
+            <div class="col t1">CAR</div>
+            <div class="col t1">REGISTRATION NO</div>
+            <div class="col t1">LICENCE-PLATE</div>
+            <div class="col t1">ARRIVAL</div>
+            <div class="col t1">DEPARTURE</div>
+            <div class="col t1">PARKED</div>
+            <div class="col t1">BILL</div>
+            <div class="col t1">ACTION</div>
+        </div>
+        <div class="carDetails" id="carDetails">
+         
+        </div>
+    </div>
+
+
+    <div id="printSummary" class="printSummary">
+        <div id="summary" class="summary">
+
+        </div>
+    </div>
+   
+  <script src="parking.js"></script>
+</body>
+
+</html>
